@@ -1,0 +1,19 @@
+apiVersion: v1
+data:
+  mapRoles:
+    - groups:
+      - syatem: bootstrappers
+      - system: nodes
+      rolearn: <add arn number>
+      username: System:node:{{Ec2PrivateDNSName}}
+    mapUsers:
+      - groups:
+        - expense-trainee
+        userarn: <add arnof suresh>
+        username: suresh
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-11-06T02:05:11z"
+  name: aws-auth
+  namespace: kube-system
+  uid: <add uid>
